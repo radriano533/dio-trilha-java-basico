@@ -9,6 +9,7 @@ public class ContaTerminal {
         // Exibir a mensagem da conta criada
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
+
         System.out.println("Digite o número da Agência");
         String agencia = scanner.next();
 
@@ -16,8 +17,15 @@ public class ContaTerminal {
         int conta = scanner.nextInt();
 
         System.out.println("Digite seu nome");
-        String agencia = scanner.next();
+        String nome = scanner.next();
 
+        System.out.println("Digite seu sobrenome");
+        String sobrenome = scanner.next();
+
+        System.out.println("Digite valor para depósito");
+        double saldo = scanner.nextDouble();
+        
+        System.out.println("Olá, "+ nome +" "+ sobrenome +" obrigado por criar uma conta em nosso banco,sua agência é a " + agencia + ", conta número "+ conta + " e seu saldo de R$ "+ saldo +" está disponível para saque");
        
     }
 }
